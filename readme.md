@@ -1,6 +1,7 @@
 # Assignment 3 – Data Analytics (BI 2025)
-
+This readme file is written by Chat GPT.
 ## Overview
+
 This repository contains the implementation and documentation for **Assignment 3: Data Analytics** of the course **188.429 Business Intelligence (WS 2025)** at TU Wien.  
 The project follows a subset of the **CRISP-DM** methodology and focuses on predicting house prices using the **King County House Sales** dataset.
 
@@ -10,9 +11,8 @@ The work emphasizes **reproducible data analytics**, **ethical considerations**,
 
 ## Authors
 - **Soroush Naseri** (Student A, Group 26)  
-  Matriculation No.: 12448457  
 - **Amir Saadati** (Student B, Group 26)  
-  Matriculation No.: 12434679  
+    
 
 Location: Vienna, Austria
 
