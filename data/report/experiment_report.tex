@@ -1,0 +1,145 @@
+\documentclass[sigconf]{acmart}
+
+\AtBeginDocument{ \providecommand\BibTeX{ Bib\TeX } }
+\setcopyright{acmlicensed}
+\copyrightyear{2025}
+\acmYear{2025}
+\acmDOI{10.5281/zenodo.1234567}
+
+\acmConference[BI 2025]{Business Intelligence}{-}{-}
+
+\begin{document}
+
+\title{BI2025 Experiment Report - Group 26}
+%% ---Authors: Dynamically added ---
+
+          \author{Aron Smith}
+          \authornote{Student A, Matr.Nr.: 01234567}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+          \author{Morgan Stern}
+          \authornote{Student B, Matr.Nr.: 76543210}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+          \author{َAmir Stern}
+          \authornote{Student B, Matr.Nr.: 76543210}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+          \author{Morgan Saadati}
+          \authornote{Student B, Matr.Nr.: 76543210}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+          \author{َAmir Saadati}
+          \authornote{Student B, Matr.Nr.: 76543210}
+          \affiliation{
+            \institution{TU Wien}
+            \country{Austria}
+          }
+          
+
+\begin{abstract}
+  This report documents the machine learning experiment for Group 26, following the CRISP-DM process model.
+\end{abstract}
+
+\ccsdesc[500]{Computing methodologies~Machine learning}
+\keywords{CRISP-DM, Provenance, Knowledge Graph, Machine Learning}
+
+\maketitle
+
+%% --- 1. Business Understanding ---
+\section{Business Understanding}
+
+\subsection{Data Source and Scenario}
+...Data source and Scenario description:
+Data source: The dataset is the 'House Sales in King County, USA' from Kaggle, containing 21,613 real
+house sales records in King County, Washington (Seattle area). It includes 21 attributes
+: id, date, price (target), bedrooms, bathrooms, sqft\_living, sqft\_lot, floors, waterfront (binary),
+view (ordinal 0-4), condition (ordinal 1-5), grade (ordinal 1-13), sqft\_above, sqft\_basement, yr\_built,
+yr\_renovated, zipcode (categorical), lat,  long (continuous), sqft\_living15, sqft\_lot15. All features 
+are interpretable real-estate semantics with variety: continuous numeric (sqft, lat/long), discrete numeric (bedrooms),
+ordinal (condition, grade), binary (waterfront), categorical (zipcode), temporal (date, yr\_built).
+No artificial/synthesized data; real public assessor records.
+
+Scenario: A real estate agency in Seattle aims to build a predictive tool for house prices to assist clients in 
+selling decisions, reducing over/under-valuation risks in a competitive market influenced by tech boom 
+...
+
+\subsection{Business Objectives}
+1.Develop a robust predictive model that accurately predict house sale prices in USA
+ based on property features such as  square footage, number of rooms, condition, waterfront to
+support real-estate pricing decisions.
+
+2.Analyze which property characteristics (e.g location, grade, renovations, size) 
+have the most influence on sale price to help stakeholders understand market determinants.
+...
+
+%% --- 2. Data Understanding ---
+\section{Data Understanding}
+
+The following features were identified in the dataset:
+
+\begin{table}[h]
+  \caption{Raw Data Features}
+  \label{tab:features}
+  \begin{tabular}{lp{0.2\linewidth}p{0.4\linewidth}}
+    \toprule
+    \textbf{Feature Name} & \textbf{Data Type} & \textbf{Description} \\
+    \midrule
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+%% --- 3. Data Preparation ---
+\section{Data Preparation}
+\subsection{Data Cleaning}
+Describe your Data preparation steps here and include respective graph data.
+
+
+%% --- 4. Modeling ---
+\section{Modeling}
+
+\subsection{Hyperparameter Configuration}
+The model was trained using the following hyperparameter settings:
+
+\begin{table}[h]
+  \caption{Hyperparameter Settings}
+  \label{tab:hyperparams}
+  \begin{tabular}{lp{0.4\linewidth}l}
+    \toprule
+    \textbf{Parameter} & \textbf{Description} & \textbf{Value} \\
+    \midrule
+    Learning Rate & From 0.001 to 0.1 & 1.23 \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Training Run}
+A training run was executed with the following characteristics:
+\begin{itemize}
+    \item \textbf{Algorithm:} Random Forest Algorithm
+    \item \textbf{Start Time:} 2025-12-25 15:52:58
+    \item \textbf{End Time:} 2025-12-25 15:57:51
+    \item \textbf{Result:} R-squared Score = 1.2300
+\end{itemize}
+
+%% --- 5. Evaluation ---
+\section{Evaluation}
+
+%% --- 6. Deployment ---
+\section{Deployment}
+
+\section{Conclusion}
+
+\end{document}
