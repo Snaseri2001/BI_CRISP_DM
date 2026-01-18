@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\caption{Overall comparison on the test set (final model vs baselines).}
+\label{tab:overall_comparison}
+\begin{tabular}{lrrrrrr}
+\hline
+label & rmse\_log & mae\_log & r2\_log & rmse\_price & mae\_price & r2\_price \\
+\hline
+final\_model & 0.195188 & 0.145232 & 0.842289 & 147653.06 & 85962.37 & 0.775077 \\
+baseline\_mean\_log & 0.491501 & 0.381796 & -9e-06 & 317872.57 & 199006.82 & -0.042452 \\
+baseline\_mean\_price & 0.515821 & 0.406667 & -0.101419 & 311706.86 & 211807.57 & -0.002404 \\
+baseline\_random & 0.72921 & 0.574228 & -1.201201 & 492489.08 & 317543.44 & -1.502321 \\
+\hline
+\end{tabular}
+\end{table}
